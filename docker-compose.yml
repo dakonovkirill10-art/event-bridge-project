@@ -3,7 +3,8 @@ services:
     image: rabbitmq:3-management
     container_name: eventbridge_rabbitmq
     ports:
-    - "8002:8002"
+      - "5672:5672"
+      - "15672:15672"
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
